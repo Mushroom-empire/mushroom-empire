@@ -194,6 +194,11 @@
   .hero h1 small { display: block; font-family: "Cormorant Garamond", Garamond, serif; font-size: .3em; letter-spacing: .01em; color: var(--muted); }
   html:lang(ja) .hero h1 { letter-spacing: .04em; }
 
+  /* Inline links in body text */
+  .longer a { border-bottom: 1px solid var(--rule); transition: border-color .2s, color .2s; }
+  .longer a:hover { color: var(--ink); border-color: var(--ink); }
+  .longer p + p { margin-top: 1em; }
+
   /* Contact */
   .contact .big {
     font-family: var(--serif); font-weight: 300;
@@ -273,7 +278,8 @@
         <p class="statement" data-i18n="about.statement">I make things <span class="spin">spin</span>. Before that, I made things <span class="float">float</span>.</p>
         <p data-i18n="about.body">These days I spend most of my time persuading copper, steel and magnets to cooperate, and teaching electric motors to keep calm and carry on when part of them breaks. In an electric car, a faulty motor ruins your afternoon. In an electric plane, it ruins considerably more, so we would really rather it kept spinning. Before that, I spent several years helping trains levitate, which is exactly as fun as it sounds and involves more liquid nitrogen than you would expect.</p>
         <div class="longer">
-          <p data-i18n="about.longer"><em>The longer version.</em> I am a doctoral researcher in the School of Electrical and Electronic Engineering at the University of Sheffield, working on fault-tolerant electrical machines for transport electrification: machines that can keep operating safely after a fault, for applications where stopping is not an option, from electric vehicles to more-electric aircraft. I studied at Southwest Jiaotong University (2017–2024), where my master's research focused on high-temperature superconducting (HTS) pinning maglev: measuring and characterising permanent magnet guideway (PMG) irregularity, and understanding how it shapes the dynamic performance of the levitation system. My broader interests include applied electromagnetics, electromechanical energy conversion and dynamic analysis.</p>
+          <p data-i18n="about.longer"><em>The longer version.</em> I am a doctoral researcher in the <a href="https://sheffield.ac.uk/eee">School of Electrical and Electronic Engineering</a> at the <a href="https://sheffield.ac.uk/">University of Sheffield</a>, working on <a href="https://doi.org/10.1049/iet-epa.2009.0117">fault-tolerant permanent magnet machines</a> for transport electrification: machines that can keep operating safely after a fault, for applications where stopping is not an option, from <a href="https://doi.org/10.1109/JPROC.2006.892482">electric vehicles</a> to <a href="https://doi.org/10.1109/JPROC.2022.3152995">more-electric aircraft</a>.</p>
+          <p data-i18n="about.longer2">Before Sheffield, I studied at <a href="https://en.swjtu.edu.cn/">Southwest Jiaotong University</a> (2017–2024), where my undergraduate degree was in railway vehicle systems. My master's research focused on <a href="https://doi.org/10.1109/TASC.2016.2555921">high-temperature superconducting (HTS) pinning maglev</a>, in particular measuring permanent magnet guideway (PMG) irregularity and its effect on levitation dynamics. Later, I moved on to the electromagnetic analysis and conjugate heat transfer (CFD) simulation of a <a href="https://oversea.cnki.net/kcms2/article/abstract?v=btsNj5Rv70bNrscvOIlbVxO8YFaEXVlsuyAVnq1NC1aJuZ8kOfjESyVdmFu4_qgzoJtrB5OEudaEzLw8YEUQ9hN1LyQgxn95FN_j8JKT9BRURxps2_WbOswjInr1_u17V9UE_EcfNP7lNniiglrxpyqv2hwDTHK5C4delrMlxCOlFXaQHXzkD3CYRwlcFu_d&amp;uniplatform=OVERSEA&amp;language=EN">double-sided long-stator permanent magnet linear synchronous motor</a> for an ultra-high-speed maglev test model aiming for 1,500 km/h, and that is where my interest shifted towards transport electrification. My broader interests include applied electromagnetics, electromechanical energy conversion and dynamic analysis.</p>
         </div>
       </div>
     </div>
@@ -406,7 +412,7 @@
   "label.about": "自己紹介",
   "about.statement": "モノを<span class=\"spin\">回</span>しています。その前は、モノを<span class=\"float\">浮</span>かせていました。",
   "about.body": "最近は、銅と鉄と磁石にもう少し仲良く協力してもらえるよう説得しつつ、モーターに「どこかが壊れても慌てず、そのまま回り続けること」を教えています。電気自動車のモーターが故障しても、台無しになるのは午後の予定くらいです。電動飛行機となると、台無しになるのはそれどころではありません。だからこそ、回り続けてほしいのです。その前の数年間は、列車を浮かせる仕事をしていました。聞こえるとおり楽しい仕事で、想像以上に液体窒素を使います。",
-  "about.longer": "<em>もう少し詳しく。</em>シェフィールド大学電気電子工学部の博士課程研究員として、交通の電動化に向けたフォールトトレラント電気機械、すなわち故障が発生しても安全に運転を継続できる電気機械を研究しています。対象は電気自動車からモア・エレクトリック航空機まで、停止が許されない用途です。2017年から2024年まで西南交通大学に在籍し、修士課程では高温超電導ピン止め磁気浮上を研究しました。主に永久磁石軌道（PMG）の不整の計測・評価と、それが浮上システムの動特性に与える影響を扱いました。関心分野は応用電磁気学、電気機械エネルギー変換、動的解析です。",
+  "about.longer": "<em>もう少し詳しく。</em><a href=\"https://sheffield.ac.uk/\">シェフィールド大学</a>の<a href=\"https://sheffield.ac.uk/eee\">電気電子工学部</a>の博士課程研究員として、交通の電動化に向けた<a href=\"https://doi.org/10.1049/iet-epa.2009.0117\">フォールトトレラント永久磁石モータ</a>、すなわち故障が発生しても安全に運転を継続できるモータを研究しています。対象は<a href=\"https://doi.org/10.1109/JPROC.2006.892482\">電気自動車</a>から<a href=\"https://doi.org/10.1109/JPROC.2022.3152995\">モア・エレクトリック航空機</a>まで、停止が許されない用途です。",
   "label.pubs": "論文",
   "pubs.more": "全リストは <a href=\"https://www.researchgate.net/profile/Peiyang-Zeng\">ResearchGate</a> へ",
   "label.photo": "写真",
@@ -419,7 +425,8 @@
   "label.contact": "連絡先",
   "lb.close": "閉じる",
   "name.first": "曽培洋",
-  "name.last": "<small lang=\"en\">Peiyang Zeng</small>"
+  "name.last": "<small lang=\"en\">Peiyang Zeng</small>",
+  "about.longer2": "それ以前は<a href=\"https://en.swjtu.edu.cn/\">西南交通大学</a>（2017–2024年）で学び、学部では鉄道車両システムを専攻しました。修士課程では<a href=\"https://doi.org/10.1109/TASC.2016.2555921\">高温超電導ピン止め磁気浮上</a>、特に永久磁石軌道（PMG）の不整の計測と、それが浮上の動特性に与える影響を研究しました。その後、時速1,500 kmを目指す超高速磁気浮上列車の模型を駆動する<a href=\"https://oversea.cnki.net/kcms2/article/abstract?v=btsNj5Rv70bNrscvOIlbVxO8YFaEXVlsuyAVnq1NC1aJuZ8kOfjESyVdmFu4_qgzoJtrB5OEudaEzLw8YEUQ9hN1LyQgxn95FN_j8JKT9BRURxps2_WbOswjInr1_u17V9UE_EcfNP7lNniiglrxpyqv2hwDTHK5C4delrMlxCOlFXaQHXzkD3CYRwlcFu_d&amp;uniplatform=OVERSEA&amp;language=EN\">両側式長固定子永久磁石同期リニアモータ</a>について、電磁解析と共役熱伝達（CFD）解析に取り組み、それをきっかけに関心が交通の電動化へと移りました。関心分野は応用電磁気学、電気機械エネルギー変換、動的解析です。"
 } };
   const HTML_LANG = { en: 'en', ja: 'ja' };
   const nodes = document.querySelectorAll('[data-i18n]');
